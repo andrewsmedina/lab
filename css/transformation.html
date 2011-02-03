@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>css transformation</title>
+	<style type="text/css" media="screen">
+	    .sprite {
+	        background: url(grossini.png);
+	        width: 51px;
+	        height: 109px;
+	    }
+	    
+	    .translated {
+	        -webkit-transform: translate(100px, 100px);
+	        -o-transform: translate(100px, 100px);
+	        -moz-transform: translate(100px, 100px);
+	    }
+
+	    .rotated {
+            -webkit-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+	    }
+
+	    .scaled {
+            -webkit-transform: scale(2);
+            -o-transform: scale(2);
+            -moz-transform: scale(2);
+	    }
+
+	    .scaled-rotated {
+            -webkit-transform: rotate(45deg) scale(2);
+            -o-transform: rotate(45deg) scale(2);
+            -moz-transform: rotate(45deg) scale(2);
+	    }
+
+	</style>
+</head>
+<body>
+	
+	<div class="sprite"></div>
+	
+	<div class="sprite translated"></div>
+
+	<div class="sprite rotated"></div>
+	
+	<div class="sprite scaled"></div>
+	
+	<div class="sprite scaled-rotated"></div>
+
+</body>
+</html>
